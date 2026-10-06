@@ -1,0 +1,21 @@
+{
+  "name": "sdvb3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site pédagogique SDVB3 — contribution Contact de Gabin LESCOAT",
+  "scripts": {
+    "validate:html": "html-validate \"*.html\"",
+    "check:js": "node --check assets/contact.js && node --check scripts/serve.cjs",
+    "check": "npm run validate:html && npm run check:js",
+    "test:e2e": "playwright test",
+    "start": "node scripts/serve.cjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0",
+    "html-validate": "11.16.2"
+  }
+}

@@ -1,0 +1,28 @@
+name: Signaler un défaut
+description: Consigner une erreur reproductible du site SDVB3.
+title: "[Défaut] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Utilisez uniquement des données fictives et indiquez la page concernée."
+  - type: input
+    id: page
+    attributes:
+      label: Page et version ou commit
+      placeholder: contact.html — numéro de PR ou SHA du commit
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes pour reproduire
+      description: "Précisez le navigateur, la taille d'écran et les actions effectuées."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Résultat attendu et résultat observé
+    validations:
+      required: true
