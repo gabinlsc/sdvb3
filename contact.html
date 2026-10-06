@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contactez l’équipe SDVB3, votre partenaire pour simplifier le quotidien de votre entreprise. Page de démonstration pédagogique.">
+    <meta name="theme-color" content="#163e3b">
+    <title>Contact — SDVB3</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/contact.js" defer></script>
+  </head>
+  <body class="page-contact">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="SDVB3 — Accueil">
+          <span class="brand-symbol" aria-hidden="true">S<span>↗</span></span>
+          <span>SDVB3<span class="brand-caption">Avançons ensemble.</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a class="nav-collaborators" href="connexion.html">Espace collaborateurs <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu" class="contact-main">
+      <section class="contact-hero container" aria-labelledby="contact-title">
+        <p class="eyebrow"><span aria-hidden="true"></span> Parlons de vos projets</p>
+        <div class="hero-heading">
+          <h1 id="contact-title">Tout commence par<br>une <span>conversation.</span></h1>
+          <p>Une idée, un besoin, une question ?<br>Notre équipe vous accompagne pour faire avancer votre entreprise, simplement.</p>
+        </div>
+      </section>
+
+      <div class="contact-layout container">
+        <section class="contact-details" aria-labelledby="details-title">
+          <p class="eyebrow">01 / Gardons le lien</p>
+          <h2 id="details-title">Une équipe à<br>votre écoute.</h2>
+          <p class="details-intro">SDVB3 accompagne les entreprises dans leur organisation, leurs outils numériques et la vie de leurs équipes.</p>
+
+          <dl class="contact-list">
+            <div>
+              <dt><span class="detail-icon" aria-hidden="true">@</span> E-mail</dt>
+              <dd>bonjour@sdvb3.example</dd>
+            </div>
+            <div>
+              <dt><span class="detail-icon" aria-hidden="true">↗</span> Téléphone</dt>
+              <dd>+33 (0)1 00 00 00 00</dd>
+            </div>
+            <div>
+              <dt><span class="detail-icon" aria-hidden="true">⌂</span> Nos bureaux</dt>
+              <dd>12, rue des Projets<br>75000 Paris, France</dd>
+            </div>
+          </dl>
+          <p class="fiction-note">Toutes ces coordonnées sont fictives.</p>
+
+          <div class="team-card">
+            <div class="team-avatars" aria-hidden="true"><span>MG</span><span>RD</span><span>TB</span><span>GL</span></div>
+            <p>Quatre regards.<br><strong>Une même envie d’avancer.</strong></p>
+            <span class="team-arrow" aria-hidden="true">↗</span>
+          </div>
+        </section>
+
+        <section class="contact-form-panel" aria-labelledby="form-title">
+          <div class="form-heading">
+            <div><p class="eyebrow">02 / À vous la parole</p><h2 id="form-title">Écrivez-nous.</h2></div>
+            <span class="demo-badge">Maquette</span>
+          </div>
+          <p id="demo-notice" class="demo-notice"><strong>Formulaire de démonstration.</strong> Aucun message n’est envoyé ni enregistré. Utilisez uniquement des données fictives.</p>
+          <form id="contact-form" action="contact.html" method="get" aria-describedby="demo-notice required-notice">
+            <fieldset id="contact-fields" disabled>
+              <legend class="visually-hidden">Votre message de démonstration</legend>
+              <p id="required-notice" class="required-notice">Tous les champs sont obligatoires.</p>
+              <div class="form-row">
+                <div class="field">
+                  <label for="contact-name">Votre nom <span aria-hidden="true">*</span></label>
+                  <input id="contact-name" type="text" placeholder="Camille Exemple" minlength="2" maxlength="100" autocomplete="off" required>
+                </div>
+                <div class="field">
+                  <label for="contact-email">Votre e-mail <span aria-hidden="true">*</span></label>
+                  <input id="contact-email" type="email" placeholder="camille@example.com" maxlength="254" autocomplete="off" required>
+                </div>
+              </div>
+              <div class="field message-field">
+                <label for="contact-message">Votre message <span aria-hidden="true">*</span></label>
+                <textarea id="contact-message" rows="6" placeholder="Bonjour, j’aimerais en savoir plus sur votre accompagnement…" minlength="10" maxlength="1500" aria-describedby="message-hint" required></textarea>
+                <div class="message-meta"><span id="message-hint">Entre 10 et 1 500 caractères.</span><span id="message-count" aria-hidden="true">0 / 1 500</span></div>
+              </div>
+              <div class="form-actions">
+                <button class="button-primary" type="submit">Envoyer le message <span aria-hidden="true">↗</span></button>
+                <button class="button-reset" type="reset">Effacer</button>
+              </div>
+            </fieldset>
+            <p id="form-status" class="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+            <p id="form-availability" class="form-availability">La simulation nécessite JavaScript. Aucun envoi n’est possible sans son activation.</p>
+          </form>
+          <div class="form-footnote"><span aria-hidden="true">◌</span><p>Vos idées restent ici.<br><span>Cette maquette fonctionne uniquement dans votre navigateur.</span></p></div>
+        </section>
+      </div>
+
+      <aside class="contact-bottom container" aria-label="Notre engagement">
+        <span class="bottom-mark" aria-hidden="true">↗</span>
+        <p>De l’idée au quotidien,<br><strong>on avance mieux ensemble.</strong></p>
+        <span class="bottom-caption">L’esprit SDVB3</span>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p><strong>SDVB3</strong> <span>© 2026 · Projet pédagogique · Entreprise fictive</span></p>
+        <p class="footer-team">Marceau Gioanetti · Remi Durand · Teddy Barraud · Gabin Lescoat</p>
+      </div>
+    </footer>
+  </body>
+</html>
