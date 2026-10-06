@@ -52,6 +52,8 @@ flowchart LR
 
 **Validation du schéma par le groupe : en attente.** Les branches en pointillé sont proposées, pas réalisées. Aucun conflit ni aucune approbation n'est inventé. Le schéma 2 et le conflit dans `index.html` relèvent de l'exercice collectif à réaliser ensuite.
 
+Repères réels : `main` et `dev` commencent au commit `2004ff3`. `feature/contact` part de cette version de `dev`, avec la contribution initiale `15a87fb`. La [PR #2](https://github.com/gabinlsc/sdvb3/pull/2) vise `dev` et référence l'[Issue #1](https://github.com/gabinlsc/sdvb3/issues/1). Aucune fusion de Contact n'a encore eu lieu.
+
 ## Planning proposé, à confirmer
 
 L'échéance client n'a pas encore été communiquée. Les dates ci-dessous sont une proposition de travail, à ajuster par le groupe avant validation du milestone.
@@ -79,6 +81,8 @@ gantt
 | Relecture par Gabin d'une contribution d'un autre membre | À faire, dépend d'une PR du groupe |
 
 La colonne « Terminé » n'est atteinte qu'après approbation et fusion. Ce tableau est un suivi versionné de la contribution, pas un GitHub Project partagé. Le Kanban du groupe reste à organiser ensemble.
+
+L'Issue et la PR Contact portent aussi le label `statut: à relire`. Le [milestone Version 1.0](https://github.com/gabinlsc/sdvb3/milestone/1) existe avec un objectif ; sa date reste à confirmer. La relecture est demandée à @Remi-tec sur la PR.
 
 ## Références des outils
 

@@ -61,7 +61,7 @@ test("Navigation explicite et accès au clavier", async ({ page }) => {
   await page.keyboard.press("Tab");
   await expect(page.getByRole("link", { name: "Aller au contenu" })).toBeFocused();
   await page.keyboard.press("Enter");
-  expect(new URL(page.url()).hash).toBe("#contenu");
+  await expect(page).toHaveURL(/#contenu$/);
   const nav = page.getByRole("navigation", { name: "Navigation principale" });
   for (const [name, href] of [["Accueil", "index.html"], ["Services", "services.html"], ["Contact", "contact.html"], ["Espace collaborateurs", "connexion.html"]]) {
     await expect(nav.getByRole("link", { name })).toHaveAttribute("href", href);

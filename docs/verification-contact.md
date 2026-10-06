@@ -24,7 +24,15 @@ Le compteur restait à la valeur précédente après un clic sur « Effacer ». 
 
 ## Preuve volontaire HTML et CI
 
-Une erreur volontaire sera publiée dans une étape dédiée, puis corrigée après constat de l'échec GitHub Actions. Les commits et liens d'exécution seront consignés ici après observation effective des résultats.
+- Version correcte initiale : commit `15a87fb` ; validation HTML locale réussie.
+- Erreur volontaire : commit `3b2f876` ajoute `</input>` au champ e-mail de `contact.html`, une page secondaire du site attendu.
+- Détection locale : `npm run validate:html` échoue avec la règle `void-content`, ligne 85, code de sortie 1. Cela démontre que la commande vérifie aussi Contact.
+- [Exécution GitHub Actions en échec](https://github.com/gabinlsc/sdvb3/actions/runs/37474797714) : le contrôle HTML échoue pour cette même erreur.
+- Correction : suppression de la fermeture invalide dans le commit `fix(contact): corriger la preuve HTML et attendre la navigation clavier`.
+- Le test clavier exécuté sur Linux a aussi révélé une attente manquante dans le test : il lisait l'URL immédiatement après Entrée. L'assertion attend désormais effectivement la navigation vers `#contenu`.
+- [Contrôles de la PR après correction](https://github.com/gabinlsc/sdvb3/pull/2/checks).
+
+Les deux protections de branche imposent `Validation HTML et JavaScript`, `Tests navigateur Contact` et une approbation humaine. Les protections s'appliquent aussi à l'administrateur. Les approbations sont invalidées par de nouveaux commits.
 
 ## En attente du groupe
 
